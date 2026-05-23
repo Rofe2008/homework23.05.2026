@@ -22,6 +22,8 @@
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --font-weight-black: 900;
@@ -181,6 +183,15 @@
 @layer utilities {
   .absolute {
     position: absolute;
+  }
+  .m-\[-200px\] {
+    margin: -200px;
+  }
+  .m-\[-400px\] {
+    margin: -400px;
+  }
+  .m-\[-\] {
+    margin: -;
   }
   .m-auto {
     margin: auto;
@@ -419,6 +430,10 @@
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-6xl {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
   .text-\[14px\] {
     font-size: 14px;
