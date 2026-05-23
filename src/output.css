@@ -7,11 +7,13 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-blue-800: oklch(42.4% 0.199 265.638);
     --color-blue-900: oklch(37.9% 0.146 265.522);
+    --color-gray-900: oklch(21% 0.034 264.665);
     --color-black: #000;
     --color-white: #fff;
     --text-3xl: 1.875rem;
@@ -22,6 +24,7 @@
     --text-5xl--line-height: 1;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
+    --font-weight-black: 900;
     --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -200,6 +203,9 @@
   .mt-\[-450px\] {
     margin-top: -450px;
   }
+  .mt-\[1\] {
+    margin-top: 1;
+  }
   .mt-\[1px\] {
     margin-top: 1px;
   }
@@ -259,6 +265,12 @@
   }
   .h-\[200px\] {
     height: 200px;
+  }
+  .h-\[350px\] {
+    height: 350px;
+  }
+  .h-\[400px\] {
+    height: 400px;
   }
   .w-\[100\%\] {
     width: 100%;
@@ -341,6 +353,12 @@
   .gap-\[100px\] {
     gap: 100px;
   }
+  .gap-\[150px\] {
+    gap: 150px;
+  }
+  .gap-\[200px\] {
+    gap: 200px;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -353,6 +371,9 @@
   }
   .bg-\[bl\] {
     background-color: bl;
+  }
+  .bg-amber-50 {
+    background-color: var(--color-amber-50);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -368,6 +389,9 @@
   }
   .bg-blue-900 {
     background-color: var(--color-blue-900);
+  }
+  .bg-gray-900 {
+    background-color: var(--color-gray-900);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -401,6 +425,10 @@
   }
   .text-\[15px\] {
     font-size: 15px;
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
